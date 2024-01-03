@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icon-->
+    <link rel="shortcut icon" type="image/jpg" href="./icons/favicon.ico" />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="styles_animations.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <!--Google Material Symbols-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title> Victor Griñán's Porfolio </title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-light" id="menuBar">
+
+            <div class="container-fluid flex-corners">
+
+                <div id="logo">
+                    <a href="#heroBanner">
+                        <h1 id="v"> V </h1>
+                    </a>
+                    <a href="#heroBanner">
+                        <h1 id="g"> G </h1>
+                    </a>
+                    <img src="./icons/logo_2.png" alt="logo">
+                </div>
+
+                <!-- hamburger menu: -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- menu bar: -->
+                <div class="collapse navbar-collapse nav-tab" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item" id="aboutTab">
+                            <a class="nav-link" aria-current="page" href="#aboutArticle">About</a>
+                            <div class="indicator" id="aboutTabIndicator"></div>
+                        </li>
+                        <li class="nav-item" id="portfolioTab">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <div class="indicator" id="portfolioTabIndicator"></div>
+                        </li>
+                        <li class="nav-item" id="skillsTab">
+                            <a class="nav-link" href="#skillsBoxes">Skills</a>
+                            <div class="indicator" id="skillsTabIndicator"></div>
+                        </li>
+                        <li class="nav-item" id="certTab">
+                            <a class="nav-link" href="#certificates">Certificates</a>
+                            <div class="indicator" id="certTabIndicator"></div>
+                        </li>
+                        <li class="nav-item" id="contactTab">
+                            <a class="nav-link" href="#contact">Conctact Me</a>
+                            <div class="indicator" id="contactTabIndicator"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://en.bc.fi/qualifications/full-stack-web-developer-program/"
+                                target="blank">HBC</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+
+
+        <section id="heroBanner">
+
+            <div class="hexMap">
+
+            </div>
+
+            <div class='bannerContent'>
+                <div id="intro">
+                    <h4 id="hi" class="hand-write">Hi, I'm</h3>
+                        el mismisimo
+                        <h2 id="my-name">
+                            <div id="victor" class="hand-write">Victor</div>
+                            <div id="grinan" class="hand-write"> Griñán</div>
+                        </h2>
+                        <h4 id="developer" class="hand-write">a <span>web developer</span></h3>
+                </div>
+
+                <div id="welcome">
+                    <h4 id="welcome-to" class="flying1 hand-write">Welcome to </h4>
+                    <h1 id='portfolio-word' class="flying2 hand-write">"My <span class='portfolioWord'>
+                            Portfolio</span>"</h1>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main id="starter">
+
+        <article id="aboutArticle" class="bgLevel1">
+
+            <h2 class="title"> About me </h2>
+
+            <p class="about">
+                <br />
+                <br />
+                I am a coding <b>enthusiast</b>.
+                <br />
+                I started learning coding independently in 2019, and in June 2023 I graduated in Information and
+                communication technologies from <a
+                    href="https://en.bc.fi/qualifications/full-stack-web-developer-program/" target="blank">Helsinki
+                    Business College (HBC)</a>, where I gained a solid understanding of programming, algorithms, and
+                software design principles.
+                <br />
+                My background is in pedagogy and team leading. This has taught me to see the value of
+                good <b>group dynamics</b>. In my previous workplaces, I have quickly advanced to responsible
+                positions. I am particularly good at problem solving. My hobbies have taught me <b>patience</b>
+                and <b>perseverance</b>.
+                <br />
+                "I found pleasure in creating apps and games, both independently and as part of a <b>collaborative</b>
+                team."
+                <br />
+                <br />
+                Now I'm looking into the next steps in my <b>lifelong learning</b>.
+            </p>
+            <br />
+            <div class='cvBtns'>
+                <p>
+                    CV in PDF & Video:
+                </p>
+                <div>
+                    <a href="./documents/cv_image.png" target="_blank">
+                        <button class='appButton'>
+                            <span class="material-symbols-outlined">visibility</span>
+                        </button>
+                    </a>
+                    <a href="./documents/cv_victor_grinan_2023.pdf" target="_blank" download='cv_victor_grinan'>
+                        <button class='appButton'>
+                            <span class="material-symbols-outlined">download</span>
+                        </button>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=FXtfp2-87D8" target="_blank">
+                        <button class='appButton'>
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <br />
+            <h2 class="title"> About this page </h2>
+
+            <p class="about">
+                This is just a static but mobile-friendly page displaying some of the small projects that I have created
+                as part of my web development learning journey. I started this portfolio when I was schooling and kept
+                adding features and small improvements ever since, without changing much the <a
+                    href="./documents/web_designs.jpg" target="_blank">original design.</a> made as a class assignment
+                in the first weeks of <a href="https://en.bc.fi/qualifications/full-stack-web-developer-program/"
+                    target="blank">HBC</a> 01/2022.
+                <br />
+                <a href="https://github.com/Victor-Grinan-Dev/Portfolio"> Source code in Github</a>
+            </p>
+
+        </article>
+
+        <article id="portfolio" class="bgLevel2">
+
+            <h2 id="project_title" class="title section-title">Projects</h2>
+
+            <h3 class="accordion" id='school_proj'> <a href="#project_title" class="portfolio-link">School Projects
+                    ></a>
+            </h3>
+            <div id="schoolProjects" class='schoolProjects panel'>
+            </div>
+
+            <h3 class="accordion" id='Silly Games'> <a href="#project_title" class="portfolio-link"> Silly Games
+                    ></a>
+            </h3>
+            <div id="sillyGames" class='personalProjects panel'>
+            </div>
+
+            <h3 class="accordion" id='Personal'> <a href="#project_title" class="portfolio-link"> Personal
+                    Projects
+                    ></a></h3>
+            <div id="personalProjects" class='personalProjects panel'>
+            </div>
+
+            <h3 class="accordion" id='Freelancer jobs'> <a href="#project_title" class="portfolio-link"> Freelancer jobs
+                    >
+                </a></h3>
+            <div id="freelancer" class='freelancer panel'></div>
+
+            <h3 class="accordion" id='Other Internet'> <a href="#project_title" class="portfolio-link"> Other Internet
+                    Projects > </a> </h3>
+            <div id="internet" class='panel '>
+                <div class='internet-filters'>
+
+                    <span class='filter-item'>
+                        <label for="react">All</label>
+                        <input type="radio" class='tech_filter' name='tech_filter' value='all' checked>
+                    </span>
+                    <span class='filter-item'>
+                        <img src="./icons/react.png" alt="filter-img" class='tiny-tech-img'>
+                        <label for="react">React</label>
+                        <input type="radio" class='tech_filter' name='tech_filter' value='react'>
+                    </span>
+                    <span class='filter-item'>
+                        <img src="./icons/tailwind.png" alt="filter-img" class='tiny-tech-img'>
+                        <label for="tailwind">Tailwind</label>
+                        <input type="radio" class='tech_filter' name='tech_filter' value='tailwind'>
+                    </span>
+                    <span class='filter-item'>
+                        <img src="./icons/sass.png" alt="filter-img" class='tiny-tech-img'>
+                        <label for="scss">SCSS</label>
+                        <input type="radio" class='tech_filter' name='tech_filter' value='sass'>
+                    </span>
+                    <span class='filter-item'>
+                        <img src="./icons/vue.png" alt="filter-img" class='tiny-tech-img'>
+                        <label for="vue">Vue</label>
+                        <input type="radio" class='tech_filter' name='tech_filter' value='vue'>
+                    </span>
+
+                </div>
+                <div id="internetProjects" class='internet'>
+                    <!-- INTERNET PROJECTS -->
+                </div>
+            </div>
+
+        </article>
+
+        <article id="skillsBoxes" class="bgLevel3 skillsBoxes">
+
+            <div id="skillArticle">
+                <h2 id="skills" class="section-title"> Skills </h2>
+                <!--<p>I rated myself with my own system: </p>-->
+                <p class='ratingLegend skillsLegend invisible'> 5x⭐ = "God like"<br /> 4x⭐ = "Senior level"<br /> 3x⭐ =
+                    "Developer Level" <br />2x⭐ = "junior Level"<br /> 1x⭐ = "I have play with it" <br /> 0x⭐ = "Haven't
+                    seen it yet"</p>
+                <div class='skillBtns'>
+                    <button class='showSkillsLegend appButton'>Show legend</button> <button
+                        class='showMoreSkills appButton'>Show Weakest</button>
+                    <br> <br>
+                </div>
+                <div id="allSkills">
+
+                    <div class="skillGroup primarySkillGroup" id='basicFrontend'>
+                        <h3 class="skillGroupTitle">Basic Frontend:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div> <!--15/9-->
+                    </div>
+                    <div class="skillGroup primarySkillGroup" id='templating'>
+                        <h3 class="skillGroupTitle">Templating Languages</h3>
+                        <div class="subSkills"></div>
+                        <div class="overall">😎</div>
+                    </div>
+                    <div class="skillGroup primarySkillGroup" id='frameworks'>
+                        <h3 class="skillGroupTitle">JS Frameworks:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div><!--7/15-->
+                    </div>
+
+                    <div class="skillGroup primarySkillGroup" id='advanceFrontend'>
+                        <h3 class="skillGroupTitle">Advance JS:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div><!--7/15-->
+                    </div>
+                    <div class="skillGroup primarySkillGroup" id='advanceFrontend2'>
+                        <h3 class="skillGroupTitle">CSS Frameworks:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div><!--7/15-->
+                    </div>
+                    <div class="skillGroup primarySkillGroup" id='backendNode'>
+                        <h3 class="skillGroupTitle">Backend Node:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div><!--2/10-->
+                    </div>
+                    <div class="skillGroup primarySkillGroup" id='backendPython'>
+                        <h3 class="skillGroupTitle">Backend Python:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div><!--7/15-->
+                    </div>
+                    <div class="skillGroup secundarySkillGroup invisible" id='backendPHP'>
+                        <h3 class="skillGroupTitle">Backend PHP:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div><!--4/15-->
+                    </div>
+                    <div class="skillGroup secundarySkillGroup invisible" id='cloudService'>
+                        <h3 class="skillGroupTitle">Cloud Service:</h3>
+                        <div class="subSkills">
+
+                        </div>
+                        <div class="overall">😎</div><!--4/15-->
+                    </div>
+
+                    <div class="skillGroup secundarySkillGroup invisible" id='backendJava'>
+                        <h3 class="skillGroupTitle">Backend Java:</h3>
+                        <div class="subSkills"></div>
+                        <div class="overall">😎</div>
+                    </div>
+
+                    <div class="skillGroup secundarySkillGroup invisible" id='embedSystems'>
+                        <h3 class="skillGroupTitle">Embed Systems:</h3>
+                        <div class="subSkills"></div>
+                        <div class="overall">😎</div><!--3/15-->
+                    </div>
+
+                    <div class="skillGroup secundarySkillGroup invisible" id='cms'>
+                        <h3 class="skillGroupTitle">CMS's:</h3>
+                        <div class="subSkills"></div>
+                        <div class="overall">😎</div><!--1/10-->
+                    </div>
+                    <div class="skillGroup secundarySkillGroup invisible" id='cicd'>
+                        <h3 class="skillGroupTitle">CI / CD:</h3>
+                        <div class="subSkills"></div>
+                        <div class="overall">😎</div>
+                    </div>
+
+                    <div class="skillGroup primarySkillGroup" id='otherSkills'>
+                        <h3 class="skillGroupTitle">Others:</h3>
+                        <div class="subSkills"></div>
+                        <div>😎</div>
+                    </div>
+
+                </div> <!--allSkill end-->
+            </div>
+            </div>
+            </div>
+
+        </article>
+
+        <article id="certificates" class="bgLevel4">
+            <h2 class="section-title"> Certificates </h2>
+            <button class='appButton certDisplayMode'> Show as gallery </button>
+            <br>
+            <span class="gallery invisible">
+                <div class="main-certificates certificates"></div>
+                <div class="online-certificates1 certificates"></div>
+                <div class="online-certificates2 certificates"></div>
+                <div class="online-certificates3 certificates"></div>
+                <div class="online-certificates4 certificates"></div>
+
+                <br>
+                <button class="moreCertificates appButton">
+                    Show Irrelevant certificates
+                </button>
+                <br>
+
+                <div class="othersCertificates certificates invisible">
+                    <!--invisible-->
+                </div>
+            </span>
+
+
+
+            <div class="carousel">
+                <button class="appButton carousel__button carousel__button--left is-hidden">&#60;</button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track"></ul>
+                    <div class="carousel__nav"></div>
+                </div>
+                <button class="appButton carousel__button carousel__button--right">&#62;</button>
+            </div>
+
+        </article>
+    </main>
+
+    <footer id='footer' class="footer bgLevel5">
+
+        <h4 id='contact' class="section-title">Conctact me:</h4>
+
+        <div class="email">
+
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
+                <img src="icons/email_color.png" alt="email" id="emailImg" class="icon">
+            </a>
+
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
+                <p id="emailActual"> victorgrinan@gmail.com </p>
+            </a>
+        </div>
+
+        <div id="some">
+            <a href="https://gitlab.com/VictorGrinan" target="blank">
+                <img src="./icons/gitLab.png" alt="gitlab" class="some">
+            </a>
+            <a href="https://github.com/Victor-Grinan-Dev" target="blank">
+                <img src="./icons/github_circle_white_border.png" alt="github" class="some">
+            </a>
+
+            <a href="https://www.linkedin.com/in/victor-gri%C3%B1an-892a741b7/" target="blank">
+                <img src="./icons/Linkedin-logo-transparent-PNG.png" alt="Linked-in" class="some">
+            </a>
+
+            <a href="https://www.instagram.com/victor_grinan_dev/" target="blank">
+                <img src="./icons/instagram_color.png" alt="Instagram" class="some">
+            </a>
+
+            <a href="https://twitter.com/GrinanVictor" target="blank">
+                <img src="./icons/Twitter-X.png" alt="Twitter" class="some">
+            </a>
+        </div>
+
+        <p>This page <a href="https://github.com/Victor-Grinan-Dev/Portfolio">source code</a> is accesible from my
+            Github account.</p>
+        <section id="licenseSection">
+            <p id="copyRight" class="copyRight">Copyrights &copy; <span class="year"></span></p><!-- ;  -->
+            <p id="love">Made with ❤️ from Finland</p>
+        </section>
+
+        <button id="scrollUp appButton" class="scrollUp invisible"><span class="material-symbols-outlined">
+                arrow_upward
+            </span></button>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

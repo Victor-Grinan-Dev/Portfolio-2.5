@@ -1,0 +1,176 @@
+#v, #g {
+    animation: float 6s ease-in-out infinite;
+}
+
+#v:hover, #g:hover {
+    animation-play-state: paused;
+}
+
+@keyframes float {
+    0% {
+    transform: translatey(0px);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
+    50% {
+    transform: translatey(-20px);
+    text-shadow: 0px 20px 10px rgb(68, 66, 66);
+    }
+    100% {
+    transform: translatey(0px);
+    text-shadow: 0px 0px 5px black;
+    }
+}
+
+.visible {
+    animation-name: appear;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+}
+
+.visibleContinuous {
+    animation-name: appear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes appear {
+    0%{
+        filter: blur(100px); 
+    }
+    100%{
+        filter: blur(0);
+    }     
+}
+
+.flip-in {
+	animation: flip-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes flip-in {
+    0% {
+      transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+
+.spin{ 
+    position: absolute; 
+    text-shadow: 0 0 5px#040000;
+    animation: spin infinite 20s linear;
+  }
+  
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.lightsOn {
+    animation: lightsOn infinite 500ms;
+}
+
+@keyframes lightsOn {
+    0%{
+        transform: scale(1.05);
+        text-shadow: 0 0 20px #ff005b;
+    }
+    50%{
+        text-shadow: 0 0 100px #74022a;
+    }
+    100%{
+        text-shadow: 0 0 20px #ff005b;
+    }
+}
+
+.deattach{
+    position: relative;
+    animation-name: deattach;
+    animation-duration: 5s;
+    animation-iteration-count: initial;
+    transform: rotate(-90deg);
+}
+
+@keyframes deattach{
+    0%{
+        transform: rotate(-45deg);
+    }
+    20%{
+        transform: rotate(-145deg);
+    }
+
+    40%{
+        transform: rotate(-70deg);
+    }
+    50%{
+        transform: rotate(-115deg);
+    }
+    60%{
+        transform: rotate(-80deg);
+    }
+    65%{
+        transform: rotate(-110deg);   
+    }
+    70%{   
+        transform: rotate(-90deg);
+    }
+    75%{
+        transform: rotate(-110deg);   
+    }
+    80%{   
+        transform: rotate(-90deg);
+    }
+    85%{
+        transform: rotate(-105deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+.shake{
+    animation: shake 500ms;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(0dg);
+    }
+    10%{
+        transform: rotate(-1dg);
+    }
+    20%{
+        transform: rotate(0dg);
+    }
+    30%{
+        transform: rotate(1dg);
+    }
+    40%{
+        transform: rotate(0dg);
+    }
+    50%{
+        transform: rotate(-1dg);        
+    }
+    60%{
+        transform: rotate(0dg);
+    }
+    70%{
+        transform: rotate(1dg);
+    }
+    80%{
+        transform: rotate(0dg);
+    }
+    90%{
+        transform: rotate(-1dg);
+    }
+    100%{
+        transform: rotate(0dg);
+    }
+    
+}
