@@ -8,7 +8,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "secrets",
-  password: "vitismanXD2019",
+  password: process.env.PG_PASSWORD,
   port: 5432,
 });
 
@@ -18,6 +18,7 @@ const port = 3000;
 // const is_auth = false;
 
 app.use(express.urlencoded({ extended: true }));
+app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 // app.get("/", (req, res) => {
@@ -33,6 +34,14 @@ app.get("/", (req, res) => {
     data,
   });
 });
+
+app.get("/login", function (req, res) {
+  res.render(__dirname + "/views/login/login");
+});
+app.get("/register", function (req, res) {
+  res.render(__dirname + "/views/login/register");
+});
+
 // app.get("/login", (req, res) => {
 //   res.render(__dirname + "/views/login.ejs");
 // });
